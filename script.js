@@ -24,6 +24,6 @@ document.getElementById('mail').addEventListener('click', function (event) {
 // Si no lo soporta lo cambia por un fondo semi transparente
 document.addEventListener('DOMContentLoaded', function() {
     if (!CSS.supports('backdrop-filter', 'blur(10px)')) {
-        document.body.classList.add('no-navbar');
+        document.body.classList.add('no-dropdown_menu');
     }
 });

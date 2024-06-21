@@ -50,17 +50,9 @@ header {
     background: transparent;
     box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
     padding: 10px 20px;
-    -webkit-backdrop-filter: blur(10px); /* Para Safari */
+    -webkit-backdrop-filter: blur(20px); /* Para Safari */
     backdrop-filter: blur(20px);
 }
-
-/* Diseño por si no soporta el backdrop-filter y lo cambie por una semitransparente */
-.no-navbar .navbar {
-    background: rgba(255, 255, 255, 0.7); /* Fallback para navegadores sin soporte */
-    -webkit-backdrop-filter: none;
-    backdrop-filter: none;
-}
-/* Finalización */
 
 .navbar .logo a {
     font-size: 1.5rem;
@@ -109,12 +101,21 @@ header {
     height: 0;
     width: 300px;
     background: transparent;
+    -webkit-backdrop-filter: blur(20px); /* Para Safari */
     backdrop-filter: blur(20px);
     box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     overflow: hidden;
     transition: height .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
+/* Diseño por si no soporta el backdrop-filter y lo cambie por una semitransparente */
+.no-dropdown_menu .dropdown_menu {
+    background: rgba(255, 255, 255, 0.7); /* Fallback para navegadores sin soporte */
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+}
+/* Finalización */
 
 .dropdown_menu.open {
     height: 260px;
