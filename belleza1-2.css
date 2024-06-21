@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=Jacquard+12+Charted&family=Libre+Barcode+39+Extended+Text&family=Playwrite+US+Trad:wght@100..400&family=Press+Start+2P&family=Protest+Revolution&family=Rubik+Glitch+Pop&family=Rubik+Moonrocks&family=Sixtyfour&display=swap');
+
 /* Diseño para fondo y eliminar decoracion de lista  */
 * {
     margin: 0;
@@ -14,8 +16,6 @@ body {
     background-size: cover;
     background-position: center;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=Jacquard+12+Charted&family=Libre+Barcode+39+Extended+Text&family=Playwrite+US+Trad:wght@100..400&family=Press+Start+2P&family=Protest+Revolution&family=Rubik+Glitch+Pop&family=Rubik+Moonrocks&family=Sixtyfour&display=swap');
 
 form,
 h1 {
