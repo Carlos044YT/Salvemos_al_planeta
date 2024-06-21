@@ -50,8 +50,17 @@ header {
     background: transparent;
     box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
     padding: 10px 20px;
+    -webkit-backdrop-filter: blur(10px); /* Para Safari */
     backdrop-filter: blur(20px);
 }
+
+/* Diseño por si no soporta el backdrop-filter y lo cambie por una semitransparente */
+.no-navbar .navbar {
+    background: rgba(255, 255, 255, 0.7); /* Fallback para navegadores sin soporte */
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+}
+/* Finalización */
 
 .navbar .logo a {
     font-size: 1.5rem;
@@ -261,4 +270,49 @@ footer {
     margin-top: 30px;
     margin-left: 30px;
     margin-right: 30px;
+}
+
+/* Diseño responsive para el copyright.html */
+@media (max-width:660px){
+    .contenido .responsive_img img{
+    width: 40%;
+    height: 40%;
+    }
+}
+
+.contenido .responsive_img img{
+    border-radius: 200px;
+}
+
+.contenido .responsive_img .fotos_tablero img{
+    border-radius: 10px;
+    border-color: #0a1a2a;
+    border: 3.5px solid #0a1a2a;
+}
+
+.contenido .responsive_img a{
+    padding: 2px;
+}
+
+/* Diseño index.html */
+.contenido .contenido_index h1{
+    color: #fff;
+    font-size: 35px;
+}
+
+.contenido .contenido_index p{
+    font-size: 25px;
+}
+
+/* Diseño Estadisticas.html */
+@media (max-width:990px){
+    .contenido .contenido_fd img{
+        width: 40%;
+    }
+}
+
+@media (max-width:500px){
+    .contenido .contenido_fd img{
+        width: 65%;
+    }
 }
