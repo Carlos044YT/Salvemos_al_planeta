@@ -111,7 +111,7 @@ header {
 
 /* Diseño por si no soporta el backdrop-filter y lo cambie por una semitransparente */
 .no-dropdown_menu .dropdown_menu {
-    background: rgba(255, 255, 255, 0.7); /* Fallback para navegadores sin soporte */
+    background: rgba(13, 32, 51); /* Fallback para navegadores sin soporte */
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
 }
