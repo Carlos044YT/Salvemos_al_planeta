@@ -52,8 +52,8 @@ a:hover {
     width: 500px;
     background: #0d2033;
     color: #fff;
-    margin: 0 auto;
     border-radius: 15px;
+    margin: auto;
 }
 
 .contenido .contenido1 input{
@@ -73,6 +73,22 @@ a:hover {
     background: #0e4787;
     border: 5px;
     outline: auto;
+}
+
+@media(max-width:610px){
+    
+    .contenido1{
+        width: 80%;
+        background: #0d2033;
+        color: #fff;
+        border-radius: 15px;
+    }
+    
+    .contenido .contenido1 .btn_input input{
+        width: 60%;
+        text-align: center;
+        font-size: 12px;
+    }
 }
 
 /* Diseño del header */
