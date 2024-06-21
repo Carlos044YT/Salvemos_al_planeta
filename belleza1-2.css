@@ -15,6 +15,23 @@ body {
     background-position: center;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=Jacquard+12+Charted&family=Libre+Barcode+39+Extended+Text&family=Playwrite+US+Trad:wght@100..400&family=Press+Start+2P&family=Protest+Revolution&family=Rubik+Glitch+Pop&family=Rubik+Moonrocks&family=Sixtyfour&display=swap');
+
+form,
+h1 {
+    text-align: center;
+    font-family: cursive;
+}
+
+h2 {
+    font-family: "Playwrite US Trad", cursive;
+    font-optical-sizing: auto;
+}
+
+#results {
+    text-align: center;
+}
+
 li {
     list-style: none;
 }
@@ -27,6 +44,35 @@ a {
 
 a:hover {
     color: rgba(255, 166, 0, 0.717);
+}
+
+/* Diseño de la calculadora */
+
+.contenido1{
+    width: 500px;
+    background: #0d2033;
+    color: #fff;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.contenido .contenido1 input{
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #efefef;
+    outline: none;
+    padding: 10px 0;
+    font-size: 16px;
+    width: 85%;
+}
+
+.contenido .contenido1 .btn_input input{
+    width: 50%;
+    background: #0e4787;
+    border: 5px;
+    outline: auto;
 }
 
 /* Diseño del header */

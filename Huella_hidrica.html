@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de tu huella hidrica</title>
     <link rel="icon" href="Fotos/logo_pagina.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="belleza1-2.css">
 </head>
 
@@ -32,20 +33,50 @@
         </div>
     </header>
     <div class="contenido">
-        <p>Texto aqui</p>
+        <div class="contenido1">
+            <br><h1>Calculadora de Huella Hidráulica</h1><br>
+            <form id="waterFootprintForm">
+                <h2>Datos Personales</h2>
+                <label for="region">Región:</label><br>
+                <input type="text" id="region" name="region" required><br><br>
+                <h2>Consumo de Agua Directo</h2>
+                <label for="showers">Número de duchas por semana:</label><br>
+                <input type="number" id="showers" name="showers" required><br><br>
+                <label for="laundry">Número de lavados de ropa por semana:</label><br>
+                <input type="number" id="laundry" name="laundry" required><br><br>
+                <h2>Consumo de Agua Indirecto</h2>
+                <label for="meat">Porciones de carne consumidas por semana:</label><br>
+                <input type="number" id="meat" name="meat" required><br><br>
+                <label for="vegetables">Porciones de vegetales consumidas por semana:</label><br>
+                <input type="number" id="vegetables" name="vegetables" required><br><br>
+                <div class="btn_input">
+                    <input type="submit" value="Calcular Huella Hidráulica">
+                </div>
+            </form><br>
+            <div id="results" style="display:none;">
+                <h2>Resultados</h2><br>
+                <p id="totalWaterFootprint"></p>
+                <p id="directWaterFootprint"></p>
+                <p id="indirectWaterFootprint"></p>
+            </div><br>
+        </div>
     </div>
-    <div class="Pie_de_pagina">
+    <br><br><div class="Pie_de_pagina">
         <footer class="pie-pagina">
             <div class="grupo-1">
                 <div class="box">
                     <figure>
-                            <img src="Fotos/logo_sin_fondo.png" alt="Error....">
+                        <img src="Fotos/logo_sin_fondo.png" alt="Error....">
                     </figure>
                 </div>
                 <div class="box">
                     <h2>SOBRE NOSOTROS</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vero cumque eveniet quaerat ea optio laudantium nemo aliquam. Quod ea facilis accusantium quisquam! Porro quisquam libero corrupti. Ratione, optio adipisci!</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt reiciendis corporis, commodi deleniti itaque at cum hic odit modi, accusamus, iste qui dolores dicta maxime explicabo dolor possimus eius voluptas!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vero cumque eveniet
+                        quaerat ea optio laudantium nemo aliquam. Quod ea facilis accusantium quisquam! Porro quisquam
+                        libero corrupti. Ratione, optio adipisci!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt reiciendis corporis, commodi
+                        deleniti itaque at cum hic odit modi, accusamus, iste qui dolores dicta maxime explicabo dolor
+                        possimus eius voluptas!</p>
                 </div>
                 <div class="box">
                     <h2>SIGUENOS</h2>
@@ -63,6 +94,7 @@
         </footer>
     </div>
     <script src="script.js"></script>
+    <script src="calculadora.js"></script>
 </body>
 
 </html>
